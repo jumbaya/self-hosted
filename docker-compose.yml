@@ -331,6 +331,8 @@ services:
       - "sentry-symbolicator:/data"
   web:
     <<: *sentry_defaults
+      #    expose:
+#      - "9000"
     ulimits:
       nofile:
         soft: 4096
